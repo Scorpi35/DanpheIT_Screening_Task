@@ -7,7 +7,7 @@
 2. Go to DanpheIT_Screening_Task
 
 #### How to run Task 1?
-1. Go to the directory **Task_1**.
+1. Go to the directory **Task_1/solution1-web-app**.
 2. Enter **npm install** on the terminal.
 3. Enter **npm start** on the terminal.
 4. Go to **http://localhost:3000/** on the browser
