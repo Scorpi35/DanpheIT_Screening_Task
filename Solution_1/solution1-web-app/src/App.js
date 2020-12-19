@@ -32,6 +32,8 @@ class App extends Component{
     this.setState({
       rendered_color: render_color
     })
+
+    this.props.storeColor(render_color);
   }
 
   componentDidMount(){

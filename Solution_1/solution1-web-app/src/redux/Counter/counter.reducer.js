@@ -7,10 +7,11 @@ const initialState = {
 
 const storeColor = (state, payload) => {
 
-  let colors_order = state.colors_order.append(payload);
+  let order = state.colors_order;
+  order.push(payload)
 
   return Object.assign({}, state, {
-    colors_order: colors_order
+    colors_order: order
   });
 };
 
