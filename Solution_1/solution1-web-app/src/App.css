@@ -1,7 +1,9 @@
 .container{
+  position: fixed;
   display: flex;
   justify-content: center;
-  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 .container .button_text_container{
@@ -22,6 +24,8 @@
   color: white;
   font-family: sans-serif;
   font-size: 15px;
+  border-radius: 10px;
+  border-width: 0px;
 }
 
 .container .button_text_container .text_container{
