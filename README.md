@@ -16,7 +16,7 @@
 1. Go to the directory **Task_2**.
 2. Open **main.html**.
 
-#### How to run Task_3?
+#### How to run Task 3?
 1. Go to the directory **Task_3**.
 2. Run **node main.js** on the terminal.
 
