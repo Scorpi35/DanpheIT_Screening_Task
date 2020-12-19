@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import "./App.css"
 import { connect } from "react-redux"
-import { increaseCounter, decreaseCounter } from "./redux/Counter/counter.actions"
+import { storeColor } from "./redux/Counter/counter.actions"
 
 
 class App extends Component{
@@ -41,6 +41,7 @@ class App extends Component{
   render(){
 
     let {rendered_color} = this.state;
+    let {colors_order} = this.props;
 
     return(
       <div>
@@ -55,6 +56,10 @@ class App extends Component{
         >
           Click to change the color
         </button>
+
+        <div>
+        
+        </div>
       </div>
     )
   }
@@ -62,14 +67,13 @@ class App extends Component{
 
 const mapStateToProps = state => {
   return {
-    count: state.counter.count,
+    colors_order: state.counter.colors_order,
   }
 }
 
 const mapDispatchToProps = dispatch => {
   return {
-    increaseCounter: () => dispatch(increaseCounter()),
-    decreaseCounter: () => dispatch(decreaseCounter()),
+    storeColor: (color) => dispatch(storeColor(color))
   }
 }
 
