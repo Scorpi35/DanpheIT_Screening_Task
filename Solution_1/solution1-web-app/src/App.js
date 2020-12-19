@@ -60,8 +60,17 @@ class App extends Component{
         </button>
 
         <div>
-        
+          {
+            colors_order.map((color, i) => {
+              return(
+                <div style={{color: color, float: "left"}}>
+                  {color},
+                </div>
+              )
+            })
+          }
         </div>
+
       </div>
     )
   }
