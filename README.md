@@ -10,6 +10,7 @@
 1. Go to the directory **Task_1**.
 2. Enter **npm install** on the terminal.
 3. Enter **npm start** on the terminal.
+4. Go to **http://localhost:3000/** on the browser
 
 #### How to run Task 2?
 1. Go to the directory **Task_2**.
