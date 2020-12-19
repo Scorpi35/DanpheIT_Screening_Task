@@ -1,7 +1,6 @@
 ## DanpheIT_Screening_Task
 
-#### Prerequisites
-***You should have node, react installed.***
+* **NOTE:-**You should have node, react installed.*
 
 #### Steps to run all tasks
 1. Clone the project
