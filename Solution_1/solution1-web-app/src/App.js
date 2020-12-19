@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Component } from "react"
 
 import "./App.css"
 
@@ -9,16 +9,15 @@ import {
   decreaseCounter,
 } from "./redux/Counter/counter.actions"
 
-function App(props) {
-  return (
-    <div className="App">
-      <div>Count: {props.count}</div>
 
-      <button onClick={() => props.increaseCounter()}>Increase Count</button>
-
-      <button onClick={() => props.decreaseCounter()}>Decrease Count</button>
-    </div>
-  )
+class App extends Component{
+  render(){
+    return(
+      <div>
+        <button>Click Here</button>
+      </div>
+    )
+  }
 }
 
 const mapStateToProps = state => {
