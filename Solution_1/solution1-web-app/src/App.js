@@ -3,7 +3,6 @@ import "./App.css"
 import { connect } from "react-redux"
 import { storeColor } from "./redux/Counter/counter.actions"
 
-
 class App extends Component{
 
   constructor(props){
@@ -46,31 +45,32 @@ class App extends Component{
     let {colors_order} = this.props;
 
     return(
-      <div>
-        <button 
-          onClick={this.changeColor} 
-          style={{backgroundColor: rendered_color, 
-            cursor: "pointer",
-            height: "50px",
-            width: "200px",
-            color: "white"
-          }}
-        >
-          Click to change the color
-        </button>
+      <div className="container">
+        <div className="button_text_container">
 
-        <div>
-          {
-            colors_order.map((color, i) => {
-              return(
-                <div style={{color: color, float: "left"}}>
-                  {color},
-                </div>
-              )
-            })
-          }
+          <div className="button_container">
+            <button 
+              onClick={this.changeColor} 
+              className="btn"
+              style={{backgroundColor: rendered_color}}
+            >
+              Click to change the color
+            </button>
+          </div>
+
+          <div className="text_container">
+            {
+              colors_order.map((color, i) => {
+                return(
+                  <div style={{color: color, float: "left"}}>
+                    {color},
+                  </div>
+                )
+              })
+            }
+          </div>
+
         </div>
-
       </div>
     )
   }
