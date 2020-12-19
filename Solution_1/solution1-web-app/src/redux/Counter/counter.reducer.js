@@ -1,34 +1,28 @@
-import { INCREMENT, DECREMENT } from './counter.types';
+import { STORE_COLOR } from './counter.types';
 
 
-const INITIAL_STATE = {
-
-    count: 0,
+const initialState = {
+    colors_order: []
 };
 
-const reducer = (state = INITIAL_STATE, action) => {
+const storeColor = (state, payload) => {
 
-    switch (action.type) {
+  colors_order = state.colors_order.append(payload);
 
-        case INCREMENT:
+  return Object.assign({}, state, {
+    colors_order = colors_order
+  });
+};
 
-           return {
+const reducer = (state = initialState, {type, payload = null}) => {
 
-             ...state, count: state.count + 1,
+    switch (type) {
+        case STORE_COLOR:
+          return storeColor(state, payload);
 
-           };
-
-        case DECREMENT:
-
-           return {
-              ...state, count: state.count - 1,
-
-           };
-
-         default: return state;
-
+         default:
+          return state;
     }
-
 };
 
 export default reducer;

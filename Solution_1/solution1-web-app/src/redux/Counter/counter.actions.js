@@ -1,4 +1,4 @@
-import { INCREMENT, DECREMENT } from './counter.types';
+import { INCREMENT, DECREMENT, STORE_COLOR } from './counter.types';
 
 
 export const increaseCounter = () => {
@@ -20,3 +20,10 @@ export const decreaseCounter = () => {
     };
 
 };
+
+export const storeColor = (color) => {
+  return {
+    type: STORE_COLOR,
+    payload: color
+  }
+}
