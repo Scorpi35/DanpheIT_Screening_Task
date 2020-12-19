@@ -1,6 +1,6 @@
 ## DanpheIT_Screening_Task
 
-* **NOTE:-**You should have node, react installed.*
+**NOTE:-** *You should have node, react installed.*
 
 #### Steps to run all tasks
 1. Clone the project
@@ -8,8 +8,8 @@
 
 #### How to run Task 1?
 1. Go to the directory **Task_1**.
-2. On terminal, enter **npm install**.
-3. On terminal, enter **npm start**.
+2. Enter **npm install** on the terminal.
+3. Enter **npm start** on the terminal.
 
 #### How to run Task 2?
 1. Go to the directory **Task_2**.
