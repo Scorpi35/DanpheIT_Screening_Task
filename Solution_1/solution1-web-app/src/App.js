@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import "./App.css"
 import { connect } from "react-redux"
-import { storeColor } from "./redux/Counter/counter.actions"
+import { storeColor } from "./redux/Counter/actions"
 
 class App extends Component{
 

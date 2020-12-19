@@ -1,4 +1,4 @@
-import { STORE_COLOR } from './counter.types';
+import { STORE_COLOR } from './types';
 
 export const storeColor = (color) => {
   return {
